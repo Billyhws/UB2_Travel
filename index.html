@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header avec logo et navigation -->
+   
     <header id="header">
         <div class="logo-container">
             <a href="#accueil" class="nav-link" data-page="accueil">
@@ -36,11 +36,11 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
+   
     <main>
-        <!-- Accueil Page -->
+        
         <section id="accueil" class="page active">
-            <!-- Bannière -->
+            
             <div class="banner">
                 <div class="banner-container">
                     <img src="images/2.banniere/banner.jpg" alt="Bannière UB2 Travel">
@@ -52,7 +52,7 @@
                 </div>
             </div>
             
-            <!-- Featured Content Preview -->
+            
             <div class="features-preview">
                 <div class="feature">
                     <i class="fas fa-map-marked-alt"></i>
@@ -81,7 +81,7 @@
             </div>
         </section>
 
-        <!-- Section Top Destinations -->
+        
         <section id="top-destinations" class="section page">
             <div class="page-header">
                 <h2>TOP DESTINATIONS</h2>
@@ -157,7 +157,7 @@
             </div>
         </section>
 
-        <!-- Section Thèmes -->
+        
         <section id="themes" class="section page">
             <div class="page-header">
                 <h2>THEMES</h2>
@@ -212,7 +212,7 @@
             </div>
         </section>
 
-        <!-- Section Vols -->
+        
         <section id="vols" class="section page">
             <div class="page-header">
                 <h2>VOLS</h2>
@@ -310,7 +310,7 @@
             </div>
         </section>
 
-        <!-- Section Hôtels -->
+        
         <section id="hotels" class="section page">
             <div class="page-header">
                 <h2>HOTELS</h2>
@@ -397,7 +397,7 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        
         <section id="contact" class="section page">
             <div class="page-header">
                 <h2>CONTACT</h2>
@@ -466,7 +466,7 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -502,10 +502,10 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Page Navigation
+            
             const navLinks = document.querySelectorAll('.nav-link');
             const pages = document.querySelectorAll('.page');
             
@@ -514,23 +514,23 @@
                     e.preventDefault();
                     const targetPage = this.getAttribute('data-page');
                     
-                    // Hide all pages
+                    
                     pages.forEach(page => {
                         page.classList.remove('active');
                     });
                     
-                    // Show the target page
+                    
                     document.getElementById(targetPage).classList.add('active');
                     
-                    // Scroll to top
+                    
                     window.scrollTo(0, 0);
                     
-                    // Close mobile menu if open
+                   
                     document.querySelector('nav').classList.remove('mobile-nav-active');
                 });
             });
             
-            // Mobile menu toggle
+            
             const menuToggle = document.querySelector('.mobile-menu-toggle');
             const nav = document.querySelector('nav');
             
@@ -538,7 +538,7 @@
                 nav.classList.toggle('mobile-nav-active');
             });
             
-            // Image slider functionality
+            
             const imageSliders = document.querySelectorAll('.image-slider');
             
             imageSliders.forEach(slider => {
@@ -549,45 +549,45 @@
                     dot.addEventListener('click', function() {
                         const index = this.getAttribute('data-index');
                         
-                        // Hide all images
+                       
                         images.forEach(img => {
                             img.classList.remove('active');
                         });
                         
-                        // Deactivate all dots
+                        
                         dots.forEach(d => {
                             d.classList.remove('active');
                         });
                         
-                        // Show selected image and activate dot
+                        
                         images[index].classList.add('active');
                         this.classList.add('active');
                     });
                 });
                 
-                // Auto slide every 4 seconds
+               
                 let currentIndex = 0;
                 
                 setInterval(() => {
                     currentIndex = (currentIndex + 1) % images.length;
                     
-                    // Hide all images
+                    
                     images.forEach(img => {
                         img.classList.remove('active');
                     });
                     
-                    // Deactivate all dots
+                  
                     dots.forEach(d => {
                         d.classList.remove('active');
                     });
                     
-                    // Show current image and activate dot
+                    
                     images[currentIndex].classList.add('active');
                     dots[currentIndex].classList.add('active');
                 }, 4000);
             });
             
-            // Toggle return date field based on flight type
+
             const flightTypeInputs = document.querySelectorAll('input[name="flight-type"]');
             const returnDateField = document.querySelector('.return-date');
             

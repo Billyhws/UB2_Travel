@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ img {
     height: auto;
 }
 
-/* Header styles */
+
 #header {
     position: fixed;
     top: 0;
@@ -142,12 +142,12 @@ nav {
     color: #555;
 }
 
-/* Main content styles */
+
 main {
-    padding-top: 80px; /* Account for fixed header */
+    padding-top: 80px; 
 }
 
-/* Page container */
+
 .page {
     display: none;
     min-height: calc(100vh - 80px);
@@ -157,7 +157,7 @@ main {
     display: block;
 }
 
-/* Banner styles */
+
 .banner {
     position: relative;
     height: 80vh;
@@ -197,7 +197,7 @@ main {
     margin-bottom: 25px;
 }
 
-/* Button styles */
+
 .btn {
     display: inline-block;
     padding: 10px 25px;
@@ -252,7 +252,7 @@ main {
     background-color: white;
 }
 
-/* Features preview section */
+
 .features-preview {
     display: flex;
     flex-wrap: wrap;
@@ -293,7 +293,7 @@ main {
     color: #777;
 }
 
-/* Section header styles */
+
 .section {
     padding: 70px 30px;
 }
@@ -327,7 +327,7 @@ main {
     font-size: 1.1rem;
 }
 
-/* Destinations section */
+
 .destinations-container {
     display: flex;
     flex-wrap: wrap;
@@ -410,7 +410,7 @@ main {
     margin-bottom: 15px;
 }
 
-/* Themes section */
+
 .themes-container {
     display: flex;
     flex-wrap: wrap;
@@ -469,13 +469,13 @@ main {
     opacity: 1;
 }
 
-/* Back to home button */
+
 .back-home {
     text-align: center;
     margin-top: 30px;
 }
 
-/* Flights section styles */
+
 .form-container {
     max-width: 800px;
     margin: 0 auto;
@@ -593,7 +593,7 @@ main {
     font-size: 1.1rem;
 }
 
-/* Hotels section styles */
+
 .hotels-container {
     display: flex;
     flex-wrap: wrap;
@@ -674,7 +674,7 @@ main {
     color: #ff6b6b;
 }
 
-/* Contact section styles */
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -766,7 +766,7 @@ main {
     border: 0;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #333;
     color: white;
@@ -864,7 +864,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive styles */
+
 @media screen and (max-width: 992px) {
     .banner-text h1 {
         font-size: 2.5rem;
