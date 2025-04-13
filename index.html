@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UB2 Travel - Agence de voyage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header avec logo et navigation -->
+    <header id="header">
+        <div class="logo-container">
+            <a href="#accueil" class="nav-link" data-page="accueil">
+                <img src="images/1.logo/logo.png" alt="UB2 Travel Logo" id="logo">
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link" data-page="accueil">ACCUEIL</a></li>
+                <li><a href="#top-destinations" class="nav-link" data-page="top-destinations">TOP DESTINATIONS</a></li>
+                <li><a href="#themes" class="nav-link" data-page="themes">THEMES</a></li>
+                <li><a href="#vols" class="nav-link" data-page="vols">VOLS</a></li>
+                <li><a href="#hotels" class="nav-link" data-page="hotels">HOTELS</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">CONTACT</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Accueil Page -->
+        <section id="accueil" class="page active">
+            <!-- Bannière -->
+            <div class="banner">
+                <div class="banner-container">
+                    <img src="images/2.banniere/banner.jpg" alt="Bannière UB2 Travel">
+                    <div class="banner-text">
+                        <h1>Découvrez le monde avec UB2 Travel</h1>
+                        <p>Votre partenaire pour des voyages inoubliables</p>
+                        <a href="#top-destinations" class="btn primary-btn nav-link" data-page="top-destinations">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Featured Content Preview -->
+            <div class="features-preview">
+                <div class="feature">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Destinations</h3>
+                    <p>Explorez nos destinations populaires</p>
+                    <a href="#top-destinations" class="btn outline-btn nav-link" data-page="top-destinations">Voir plus</a>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Thèmes</h3>
+                    <p>Découvrez nos thèmes de voyages</p>
+                    <a href="#themes" class="btn outline-btn nav-link" data-page="themes">Voir plus</a>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-plane"></i>
+                    <h3>Vols</h3>
+                    <p>Réservez votre prochain vol</p>
+                    <a href="#vols" class="btn outline-btn nav-link" data-page="vols">Voir plus</a>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-hotel"></i>
+                    <h3>Hôtels</h3>
+                    <p>Trouvez l'hébergement parfait</p>
+                    <a href="#hotels" class="btn outline-btn nav-link" data-page="hotels">Voir plus</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Top Destinations -->
+        <section id="top-destinations" class="section page">
+            <div class="page-header">
+                <h2>TOP DESTINATIONS</h2>
+                <p>Explorez nos destinations les plus populaires et laissez-vous inspirer</p>
+            </div>
+            
+            <div class="destinations-container">
+                <div class="destination-card">
+                    <div class="image-slider">
+                        <img src="images/3.Top destination/3.1.Sahara/AIN-Guezzam5.jpg" alt="Sahara" class="active">
+                        <img src="images/3.Top destination/3.1.Sahara/Beni-Abbes.jpg" alt="Sahara">
+                        <img src="images/3.Top destination/3.1.Sahara/Djanet3.jpg" alt="Sahara">
+                        <img src="images/3.Top destination/3.1.Sahara/ghardaia2.jpg" alt="Sahara">
+                        <div class="slider-controls">
+                            <span class="slider-dot active" data-index="0"></span>
+                            <span class="slider-dot" data-index="1"></span>
+                            <span class="slider-dot" data-index="2"></span>
+                            <span class="slider-dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sahara</h3>
+                        <p>Découvrez le charme mystérieux du désert</p>
+                        <a href="#" class="btn primary-btn">Explorer</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="image-slider">
+                        <img src="images/3.Top destination/3.2.Montagnes/BATNA-Chelia.jpg" alt="Montagnes" class="active">
+                        <img src="images/3.Top destination/3.2.Montagnes/BATNA.jpg" alt="Montagnes">
+                        <img src="images/3.Top destination/3.2.Montagnes/TISSEMSILT-Theniet-El-Had.jpg" alt="Montagnes">
+                        <img src="images/3.Top destination/3.2.Montagnes/TISSEMSILT-Theniet-El-Had2.jpg" alt="Montagnes">
+                        <div class="slider-controls">
+                            <span class="slider-dot active" data-index="0"></span>
+                            <span class="slider-dot" data-index="1"></span>
+                            <span class="slider-dot" data-index="2"></span>
+                            <span class="slider-dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Montagnes</h3>
+                        <p>Aventures au sommet des plus belles montagnes</p>
+                        <a href="#" class="btn primary-btn">Explorer</a>
+                    </div>
+                </div>
+                
+                <div class="destination-card">
+                    <div class="image-slider">
+                        <img src="images/3.Top destination/3.3.Plages/Bejaïa.jpg" alt="Plages" class="active">
+                        <img src="images/3.Top destination/3.3.Plages/Tipaza.jpg" alt="Plages">
+                        <img src="images/3.Top destination/3.3.Plages/Cherchell2.jpg" alt="Plages">
+                        <img src="images/3.Top destination/3.3.Plages/Chlef-Beni Haoua2.jpg" alt="Plages">
+                        <div class="slider-controls">
+                            <span class="slider-dot active" data-index="0"></span>
+                            <span class="slider-dot" data-index="1"></span>
+                            <span class="slider-dot" data-index="2"></span>
+                            <span class="slider-dot" data-index="3"></span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Plages</h3>
+                        <p>Détente et farniente sur les plus belles plages</p>
+                        <a href="#" class="btn primary-btn">Explorer</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-home">
+                <a href="#accueil" class="btn secondary-btn nav-link" data-page="accueil">
+                    <i class="fas fa-arrow-left"></i> Retour à l'accueil
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Thèmes -->
+        <section id="themes" class="section page">
+            <div class="page-header">
+                <h2>THEMES</h2>
+                <p>Choisissez le thème qui correspond à vos envies</p>
+            </div>
+            
+            <div class="themes-container">
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="images/4.themes/4.1.club enfant/club-enfant.jpg" alt="Club enfants">
+                        <div class="theme-overlay">
+                            <a href="#" class="btn theme-btn">Voir détails</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Club enfants</h3>
+                        <p>Des activités adaptées pour les plus jeunes</p>
+                    </div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="images/4.themes/4.2.parcs aquatiques/parc aquatique2.jpg" alt="Parcs aquatiques">
+                        <div class="theme-overlay">
+                            <a href="#" class="btn theme-btn">Voir détails</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Parcs aquatiques</h3>
+                        <p>Sensations fortes et rafraîchissement garantis</p>
+                    </div>
+                </div>
+                
+                <div class="theme-card">
+                    <div class="theme-image">
+                        <img src="images/4.themes/4.3.camping/batna-chelia-2.jpg" alt="Camping">
+                        <div class="theme-overlay">
+                            <a href="#" class="btn theme-btn">Voir détails</a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Camping</h3>
+                        <p>Reconnectez-vous avec la nature</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-home">
+                <a href="#accueil" class="btn secondary-btn nav-link" data-page="accueil">
+                    <i class="fas fa-arrow-left"></i> Retour à l'accueil
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Vols -->
+        <section id="vols" class="section page">
+            <div class="page-header">
+                <h2>VOLS</h2>
+                <p>Trouvez le vol idéal pour votre prochaine destination</p>
+            </div>
+            
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="flight-options">
+                        <div class="flight-type">
+                            <h3>Je cherche un vol :</h3>
+                            <div class="radio-group">
+                                <label class="radio-container">
+                                    <input type="radio" name="flight-type" value="round-trip" checked>
+                                    <span class="radio-custom"></span>
+                                    Aller-retour
+                                </label>
+                                <label class="radio-container">
+                                    <input type="radio" name="flight-type" value="one-way">
+                                    <span class="radio-custom"></span>
+                                    Aller simple
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="flight-class">
+                            <h3>En classe :</h3>
+                            <div class="radio-group">
+                                <label class="radio-container">
+                                    <input type="radio" name="flight-class" value="economy" checked>
+                                    <span class="radio-custom"></span>
+                                    Économique
+                                </label>
+                                <label class="radio-container">
+                                    <input type="radio" name="flight-class" value="business">
+                                    <span class="radio-custom"></span>
+                                    Affaire
+                                </label>
+                                <label class="radio-container">
+                                    <input type="radio" name="flight-class" value="first">
+                                    <span class="radio-custom"></span>
+                                    Première
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flight-details">
+                        <div class="input-group">
+                            <label for="departure">
+                                <i class="fas fa-plane-departure"></i> De :
+                            </label>
+                            <input type="text" id="departure" name="departure" placeholder="Ville de départ" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="arrival">
+                                <i class="fas fa-plane-arrival"></i> À :
+                            </label>
+                            <input type="text" id="arrival" name="arrival" placeholder="Ville d'arrivée" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="departure-date">
+                                <i class="fas fa-calendar-alt"></i> Date d'aller :
+                            </label>
+                            <input type="date" id="departure-date" name="departure-date" required>
+                        </div>
+                        
+                        <div class="input-group return-date">
+                            <label for="return-date">
+                                <i class="fas fa-calendar-alt"></i> Date de retour :
+                            </label>
+                            <input type="date" id="return-date" name="return-date">
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="passengers">
+                                <i class="fas fa-users"></i> Nombre de passager(s) :
+                            </label>
+                            <input type="number" id="passengers" name="passengers" min="1" value="1" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn search-btn">
+                        <i class="fas fa-search"></i> Chercher
+                    </button>
+                </form>
+            </div>
+            
+            <div class="back-home">
+                <a href="#accueil" class="btn secondary-btn nav-link" data-page="accueil">
+                    <i class="fas fa-arrow-left"></i> Retour à l'accueil
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Hôtels -->
+        <section id="hotels" class="section page">
+            <div class="page-header">
+                <h2>HOTELS</h2>
+                <p>Découvrez nos sélections d'hébergements de qualité</p>
+            </div>
+            
+            <div class="hotels-container">
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/5.hotels/AZ-Hotels-Grand-Oran.jpg" alt="Hôtel de luxe">
+                        <div class="hotel-badge">Premium</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Hôtel de Luxe</h3>
+                        <p>Séjour de prestige avec services premium</p>
+                        <div class="hotel-details">
+                            <span><i class="fas fa-wifi"></i> WiFi gratuit</span>
+                            <span><i class="fas fa-swimming-pool"></i> Piscine</span>
+                            <span><i class="fas fa-utensils"></i> Restaurant</span>
+                        </div>
+                        <a href="#" class="btn primary-btn">Réserver</a>
+                    </div>
+                </div>
+                
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/5.hotels/Hôtel-Sabri-Annaba.jpeg" alt="Resort tout inclus">
+                        <div class="hotel-badge">Populaire</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>Resort tout inclus</h3>
+                        <p>Vacances sans souci avec restauration et activités</p>
+                        <div class="hotel-details">
+                            <span><i class="fas fa-wifi"></i> WiFi gratuit</span>
+                            <span><i class="fas fa-swimming-pool"></i> Piscine</span>
+                            <span><i class="fas fa-cocktail"></i> Bar</span>
+                        </div>
+                        <a href="#" class="btn primary-btn">Réserver</a>
+                    </div>
+                </div>
+                
+                <div class="hotel-card">
+                    <div class="hotel-image">
+                        <img src="images/5.hotels/Hôtel-Vent-Dôme-oran.jpeg" alt="Aparthôtel">
+                    </div>
+                    <div class="card-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h3>Aparthôtel</h3>
+                        <p>Indépendance et confort pour vos séjours</p>
+                        <div class="hotel-details">
+                            <span><i class="fas fa-wifi"></i> WiFi gratuit</span>
+                            <span><i class="fas fa-parking"></i> Parking</span>
+                            <span><i class="fas fa-utensils"></i> Kitchenette</span>
+                        </div>
+                        <a href="#" class="btn primary-btn">Réserver</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-home">
+                <a href="#accueil" class="btn secondary-btn nav-link" data-page="accueil">
+                    <i class="fas fa-arrow-left"></i> Retour à l'accueil
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section page">
+            <div class="page-header">
+                <h2>CONTACT</h2>
+                <p>Besoin d'informations ? Contactez-nous</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>Université Batna 2 - 53, Route de Constantine. Fésdis, Batna 05078, Algérie</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>E-Mail</h3>
+                            <p>contact@univ-batna2.dz</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>033.23.02.34</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Envoyez-nous un message</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Votre message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8909932094896!2d6.339888075849618!3d35.55544473512925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f41fb0a9c8abd5%3A0x41f907ce48674db9!2sUniversit%C3%A9%20Batna%202!5e0!3m2!1sfr!2sdz!4v1681377674285!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="back-home">
+                <a href="#accueil" class="btn secondary-btn nav-link" data-page="accueil">
+                    <i class="fas fa-arrow-left"></i> Retour à l'accueil
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/1.logo/logo.png" alt="UB2 Travel Logo" class="footer-logo-img">
+                <p>UB2 Travel - Votre agence de voyage</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#accueil" class="nav-link" data-page="accueil">Accueil</a></li>
+                    <li><a href="#top-destinations" class="nav-link" data-page="top-destinations">Destinations</a></li>
+                    <li><a href="#themes" class="nav-link" data-page="themes">Thèmes</a></li>
+                    <li><a href="#vols" class="nav-link" data-page="vols">Vols</a></li>
+                    <li><a href="#hotels" class="nav-link" data-page="hotels">Hôtels</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 UB2 Travel. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Page Navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetPage = this.getAttribute('data-page');
+                    
+                    // Hide all pages
+                    pages.forEach(page => {
+                        page.classList.remove('active');
+                    });
+                    
+                    // Show the target page
+                    document.getElementById(targetPage).classList.add('active');
+                    
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                    
+                    // Close mobile menu if open
+                    document.querySelector('nav').classList.remove('mobile-nav-active');
+                });
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('mobile-nav-active');
+            });
+            
+            // Image slider functionality
+            const imageSliders = document.querySelectorAll('.image-slider');
+            
+            imageSliders.forEach(slider => {
+                const images = slider.querySelectorAll('img');
+                const dots = slider.querySelectorAll('.slider-dot');
+                
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        const index = this.getAttribute('data-index');
+                        
+                        // Hide all images
+                        images.forEach(img => {
+                            img.classList.remove('active');
+                        });
+                        
+                        // Deactivate all dots
+                        dots.forEach(d => {
+                            d.classList.remove('active');
+                        });
+                        
+                        // Show selected image and activate dot
+                        images[index].classList.add('active');
+                        this.classList.add('active');
+                    });
+                });
+                
+                // Auto slide every 4 seconds
+                let currentIndex = 0;
+                
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    
+                    // Hide all images
+                    images.forEach(img => {
+                        img.classList.remove('active');
+                    });
+                    
+                    // Deactivate all dots
+                    dots.forEach(d => {
+                        d.classList.remove('active');
+                    });
+                    
+                    // Show current image and activate dot
+                    images[currentIndex].classList.add('active');
+                    dots[currentIndex].classList.add('active');
+                }, 4000);
+            });
+            
+            // Toggle return date field based on flight type
+            const flightTypeInputs = document.querySelectorAll('input[name="flight-type"]');
+            const returnDateField = document.querySelector('.return-date');
+            
+            flightTypeInputs.forEach(input => {
+                input.addEventListener('change', function() {
+                    if (this.value === 'one-way') {
+                        returnDateField.style.display = 'none';
+                    } else {
+                        returnDateField.style.display = 'flex';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
